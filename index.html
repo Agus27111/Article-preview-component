@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google fonts -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Article preview component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        font-size: 13px;
+        font-family: "Manrope", sans-serif;
+        background-color: hsl(210, 46%, 95%);
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="flex justify-center items-center h-screen flex-col">
+    <section class="w-3/4 bg-white rounded-lg max-h-screen lg:w-1/2">
+      <div class="">
+        <div>
+          <img
+            src="./images/drawers.jpg"
+            alt="drawers"
+            class="w-full rounded-t-lg"
+          />
+        </div>
+        <div class="text px-4 mt-8" id="text">
+          <h1 class="text-base font-semibold text-slate-600">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="text-xs mt-4 text-slate-400">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <div class="boximg flex justify-between items-center my-4">
+            <img
+              class="w-[15%] rounded-full"
+              src="./images/avatar-michelle.jpg"
+              alt="avatar-michelle"
+            />
+            <div class="relative right-10">
+              <p class="text-slate-600">Michelle Appleton</p>
+              <p class="text-slate-400">28 Jun 2020</p>
+            </div>
+            <button class="toggleButton">
+              <img
+                src="./images/icon-share.svg"
+                alt="icon-share"
+                class="rounded-full w-4 h-4"
+              />
+            </button>
+          </div>
+        </div>
+        <div id="socialMedia" class="hidden">
+          <div
+            class="flex justify-between items-center bg-very-Dark-grayish-blue p-4"
+          >
+            <p class="uppercase">Share</p>
+            <div class="sosialMedia flex justify-around w-1/2 relative right-5">
+              <img
+                src="./images/icon-facebook.svg"
+                alt="icon-facebook"
+                class="bg-very-Dark-grayish-blue"
+              />
+              <img
+                src="./images/icon-twitter.svg"
+                alt="icon-twitter"
+                class="bg-very-Dark-grayish-blue"
+              />
+              <img
+                src="./images/icon-pinterest.svg"
+                alt="icon-pinterest"
+                class="bg-very-Dark-grayish-blue"
+              />
+            </div>
+
+            <div class="rounded-full">
+              <button class="toggleButton">
+                <img src="./images/icon-share.svg" alt="icon-share" class="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution mt-4">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Agus Setiawan</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
